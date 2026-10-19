@@ -94,6 +94,25 @@ h1 {
   white-space: nowrap;
 }
 
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-self: end;
+  gap: 8px;
+  min-width: 0;
+}
+
+.header-email {
+  font-size: 14px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.header-email:hover {
+  text-decoration: underline;
+}
+
 .main-nav {
   border-block: 1px solid var(--line);
 }
@@ -338,6 +357,47 @@ figure {
 .booking-link:hover {
   background: #62765d;
   color: white;
+}
+
+.hosts-introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 36px;
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+
+.hosts-description h3 {
+  margin: 0 0 18px;
+  font: normal 28px Georgia, 'Times New Roman', serif;
+}
+
+.hosts-description p {
+  margin: 0 0 24px;
+  line-height: 1.7;
+}
+
+.hosts-contact {
+  font-style: normal;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.hosts-photo {
+  margin: 0;
+  min-width: 0;
+}
+
+.hosts-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .home-intro {
@@ -1120,6 +1180,11 @@ select:focus-visible {
     font-size: 14px;
   }
 
+  .header-contact {
+    justify-self: start;
+    align-items: flex-start;
+  }
+
   .main-nav ul {
     flex-wrap: wrap;
     row-gap: 30px;
@@ -1167,6 +1232,11 @@ select:focus-visible {
   .directions-contact {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hosts-introduction {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
