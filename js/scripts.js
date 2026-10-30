@@ -152,7 +152,7 @@
   let index = 0;
   let timer;
 
-  const visible = () => (window.innerWidth <= 600 ? 2 : 3);
+  const visible = () => (window.innerWidth <= 600 ? 2 : 4);
 
   function show(i) {
     const max = total - visible();
