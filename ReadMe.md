@@ -25,7 +25,6 @@ Die Bildergalerie wechselt automatisch alle drei Sekunden und lässt sich mit Pf
 ## Externe Dienste
 
 - **Google Maps:** eingebettete Karte auf der Anreiseseite.
-- **Thum.io:** Website-Vorschaubilder auf der Entdecken-Seite.
 - **E-Mail:** Anfrage- und Kontaktlinks öffnen das E-Mail-Programm des Besuchers.
 
 Karte und Website-Vorschaubilder benötigen eine Internetverbindung.
