@@ -31,7 +31,7 @@ done
 for bild in ./*.jpg; do
   [ -f "$bild" ] || continue
   name="${bild##*/}"
-  cwebp -q 80 "$bild" -o "webp/${name%.png}.webp"
+  cwebp -q 80 "$bild" -o "webp/${name%.jpg}.webp"
 done
 
 # Für das Signet verlustfrei konvertieren:
