@@ -1519,8 +1519,10 @@ select:focus-visible {
 .arrival-step-image {
   display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   margin-top: 1rem;
   border-radius: var(--radius-lg);
 }
