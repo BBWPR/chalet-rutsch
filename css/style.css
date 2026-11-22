@@ -986,6 +986,11 @@ select:focus-visible {
   padding: var(--padding-container);
   border-radius: var(--radius-md);
   background: var(--bg-soft-gray);
+  overflow: hidden;
+}
+
+.arrival-steps li > div {
+  overflow: hidden;
 }
 
 .arrival-number {
@@ -1519,11 +1524,10 @@ select:focus-visible {
 .arrival-step-image {
   display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  margin-top: 1rem;
+  margin: 1rem 0 0 0;
   border-radius: var(--radius-lg);
 }
 
