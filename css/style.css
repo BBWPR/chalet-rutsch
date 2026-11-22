@@ -983,13 +983,19 @@ select:focus-visible {
 }
 
 .arrival-steps li {
+  display: flex;
+  flex-direction: column;
   padding: var(--padding-container);
   border-radius: var(--radius-md);
   background: var(--bg-soft-gray);
+  min-width: 0;
 }
 
 .arrival-steps li > div {
-  display: contents;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
 }
 
 .arrival-number {
