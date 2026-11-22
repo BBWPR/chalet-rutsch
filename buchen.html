@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="de-CH">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Planen Sie Ihren Aufenthalt im Chalet-Rutsch in Adelboden. Wunschzeitraum auswählen und Ferien für bis zu sechs Personen per E-Mail anfragen.">
+  <meta name="description"
+    content="Planen Sie Ihren Aufenthalt im Chalet-Rutsch in Adelboden. Wunschzeitraum auswählen und Ferien für bis zu sechs Personen per E-Mail anfragen.">
   <title>Buchen &amp; Anfragen | Chalet-Rutsch</title>
   <link rel="icon" type="img/png" href="img/chaletrutschsignet.webp">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <a class="skip-link" href="#inhalt">Zum Inhalt</a>
   <header>
@@ -37,7 +40,7 @@
     <section class="booking-intro">
       <p class="explore-eyebrow">Ihre Ferien im Chalet-Rutsch</p>
       <h2>Aufenthalt anfragen</h2>
-      <p class="explore-eyebrow">(Hinweis: funktioniert noch nicht)</p>
+      <p class="explore-eyebrow">(Ein optimierte Möglichkeit für das Buchen folgt noch.)</p>
       <p>Wählen Sie Ihren Wunschzeitraum und senden Sie uns eine Anfrage. Wir freuen uns auf Ihre Nachricht.</p>
     </section>
     <div class="booking-layout">
@@ -45,20 +48,69 @@
       <section class="booking-calendar" aria-labelledby="calendar-title">
         <h3 id="calendar-title">Ihr Wunschzeitraum</h3>
         <p class="booking-hint">Zuerst die Anreise, danach die Abreise wählen.</p>
-        <p class="calendar-notice">Demokalender – zeigt keine Verfügbarkeit oder bestätigten Buchungen an.</p>
-        <div class="calendar-heading"><button type="button" id="previous-month" aria-label="Vorheriger Monat">‹</button><h4 id="calendar-month" aria-live="polite"></h4><button type="button" id="next-month" aria-label="Nächster Monat">›</button></div>
-        <div class="calendar-weekdays" aria-hidden="true"><span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span></div>
+        <p class="calendar-notice">Provisorischer Kalender – zeigt keine Verfügbarkeit oder bestätigte Buchungen an.</p>
+        <div class="calendar-heading"><button type="button" id="previous-month" aria-label="Vorheriger Monat">‹</button>
+          <h4 id="calendar-month" aria-live="polite"></h4><button type="button" id="next-month"
+            aria-label="Nächster Monat">›</button>
+        </div>
+        <div class="calendar-weekdays" aria-hidden="true">
+          <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
+        </div>
         <div id="calendar-days" class="calendar-days" role="group" aria-label="Datum auswählen"></div>
-        <div class="date-summary" aria-live="polite"><div><span>Anreise</span><strong id="arrival-value">Bitte wählen</strong></div>
-        <div><span>Abreise</span><strong id="departure-value">Bitte wählen</strong></div></div>
         <p id="stay-length" class="booking-hint" aria-live="polite">Wählen Sie zwei Daten für Ihren Aufenthalt.</p>
+        <div class="date-summary" aria-live="polite">
+          <div><span>Anreise</span><strong id="arrival-value">Bitte wählen</strong></div>
+          <div><span>Abreise</span><strong id="departure-value">Bitte wählen</strong></div>
+        </div>
+        <br/>
         <button type="button" class="reset-dates" id="reset-dates">Auswahl zurücksetzen</button>
-        <noscript><p>Für die Datumsauswahl bitte JavaScript aktivieren oder den Wunschzeitraum direkt per E-Mail anfragen.</p></noscript>
+        <noscript>
+          <p>Für die Datumsauswahl bitte JavaScript aktivieren oder den Wunschzeitraum direkt per E-Mail anfragen.</p>
+        </noscript>
       </section>
       <section class="booking-details" aria-labelledby="details-title">
         <h3 id="details-title">Gut zu wissen</h3>
-        <dl class="booking-facts"><div><dt>Ferienwohnung</dt><dd>88 m² im Obergeschoss</dd></div><div><dt>Gäste</dt><dd>Bis zu 6 Personen · 3 Schlafzimmer</dd></div><div><dt>Badezimmer</dt><dd>1 Badezimmer mit Dusche/Badewanne</dd></div><div><dt>Ausstattung</dt><dd>Balkon, Internet und Privatparkplatz</dd></div><div><dt>Zugang</dt><dd>Über eine Treppe mit 70 Stufen ab Parkplatz</dd></div><div><dt>Hausregeln</dt><dd>Nichtraucherwohnung · keine Tiere</dd></div></dl>
-        <div class="booking-request"><h3>Persönlich anfragen</h3><p>Preise, Verfügbarkeit sowie An- und Abreisezeiten teilen wir Ihnen auf Anfrage mit. Eine Buchung kommt erst mit unserer Bestätigung zustande.</p><label for="guest-count">Anzahl Personen</label><select id="guest-count" name="personen"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option selected>6</option></select><a class="booking-button" id="booking-email" href="mailto:info@chalet-rutsch.ch?subject=Buchungsanfrage%20Chalet-Rutsch">Anfrage per E-Mail senden</a><p class="booking-hint">Öffnet Ihr E-Mail-Programm. Sie können die Nachricht vor dem Senden ergänzen.</p><a href="tel:+41791253234">+41 79 125 32 34</a></div>
+        <dl class="booking-facts">
+          <div>
+            <dt>Ferienwohnung</dt>
+            <dd>80 m² im 1. Obergeschoss</dd>
+          </div>
+          <div>
+            <dt>Gäste</dt>
+            <dd>Bis zu 6 Personen · 3 Schlafzimmer</dd>
+          </div>
+          <div>
+            <dt>Badezimmer</dt>
+            <dd>1 Badezimmer mit Dusche/Badewanne</dd>
+          </div>
+          <div>
+            <dt>Ausstattung</dt>
+            <dd>Balkon, Internet, Kaffemaschine, Microwelle, Bettwäsche, Skiraum ...</dd>
+          </div>
+          <div>
+            <dt>Zugang</dt>
+            <dd>Über eine Treppe diret ab Bushaltestelle oder Parkplatz</dd>
+          </div>
+          <div>
+            <dt>Bedingungen</dt>
+            <dd>Nichtraucherwohnung · keine Tiere</dd>
+          </div>
+        </dl>
+        <div class="booking-request">
+          <h3>Persönlich anfragen</h3>
+          <p>Preise, Verfügbarkeit sowie An- und Abreisezeiten teilen wir Ihnen auf Anfrage mit. Eine Buchung kommt erst
+            mit unserer Bestätigung zustande.</p><label for="guest-count">Anzahl Personen</label><select
+            id="guest-count" name="personen">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option selected>6</option>
+          </select><a class="booking-button" id="booking-email"
+            href="mailto:info@chalet-rutsch.ch?subject=Buchungsanfrage%20Chalet-Rutsch">Anfrage per E-Mail senden</a>
+          <p class="booking-hint">Die Anfrage öffnet Ihr E-Mail-Programm.<br/>Sie können die Nachricht vor dem Senden ergänzen.</p>
+        </div>
       </section>
     </div>
   </main>
@@ -66,10 +118,12 @@
     <div class="container footer-grid">
       <address class="contact">
         <p>Barbara & Peter Rutschmann-Signer<br>Landstrasse 101<br>CH-3715 Adelboden<br>
-        <a href="mailto:info@chalet-rutsch.ch">info@chalet-rutsch.ch</a><br>
-        <a href="tel:+41791253234">+41 79 125 32 34</a></p>
+          <a href="mailto:info@chalet-rutsch.ch">info@chalet-rutsch.ch</a><br>
+          <a href="tel:+41791253234">+41 79 125 32 34</a>
+        </p>
       </address>
-      <a href="index.html" aria-label="Chalet-Rutsch – Startseite"><img class="logo footer-logo" src="img/chaletrutschsignet.webp" alt="Signet Chalet-Rutsch" width="96" height="96" loading="lazy"></a>
+      <a href="index.html" aria-label="Chalet-Rutsch – Startseite"><img class="logo footer-logo"
+          src="img/chaletrutschsignet.webp" alt="Signet Chalet-Rutsch" width="96" height="96" loading="lazy"></a>
       <nav class="legal" aria-label="Rechtliche Informationen">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutzerklärung</a>
@@ -79,4 +133,5 @@
   </footer>
   <script src="js/scripts.js" defer></script>
 </body>
+
 </html>
