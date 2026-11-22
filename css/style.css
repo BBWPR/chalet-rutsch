@@ -1339,3 +1339,6 @@ select:focus-visible {
 @media (max-width: 600px) {
   .carousel-track li { flex-basis: 50%; }
 }
+
+/* Cookie Banner Styles */
+.cookie-banner {
